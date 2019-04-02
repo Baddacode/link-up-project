@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import logo2 from './materials/find-parrot-logo.png'
-import bgImg from './materials/bg-img.png'
-import './App.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
-import {Carousel} from '3d-react-carousal';
+import React, { Component } from 'react'
+import './App.css'
+import {Carousel} from '3d-react-carousal'
+import TopNavBar from './components/topNavBar.js'
+import TopNav from './components/topNav.js'
+import MainContainer from './components/mainContainer.js'
+import Footer from './components/footer.js'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      firstName: "",
       lastName: "",
       email: ""
     }
@@ -77,72 +75,9 @@ class App extends Component {
 
     return (
       <div className="App">
-
-        <div className="navbar">
-          <img className="logo" src={logo2} alt="" />
-          <a href="#signup">Sign Up</a>
-          <a href="#contact">Login</a>
-          <a href="#news">About Us</a>
-          <a href="#home">All products</a>
-        </div>
-
-        <div className="topnav">
-          <img className="bgImg" src={bgImg} alt="background" width="100%"/>
-          <div className="searchForm">
-            <h1>Quick Search for Your <span className="greenText"> Perfect Product</span></h1>
-            <h3>Innovate . List . Connect</h3>
-            <div className="searchBar">
-              <select>
-                <option>Category</option>
-                <option>Date</option>
-                <option>Author</option>
-              </select>
-              <input type="text" />
-              <button type="submit">START SEARCHING</button>
-            </div>
-          </div>
-
-          <div className="twoBtns">
-              <div className="btnOne"><span className="img1"/>All categories</div>
-              <div className="btnTwo"><span className="img2"/>How it works?</div>
-          </div>
-        </div>
-
-        <div className="main">
-          <p className="bigText">Most Popular Products</p>
-          <p className="smallText">This is the list of products that are most interested in users</p>
-        </div>
-        <div className="imagesCont">
-            <div className="imgCont">
-              <img src="/images/work1.jpg" width="600" height="400"/>
-              <div className="desc">Hubstaff Directory</div>
-            </div>
-            <div className="imgCont">
-              <img src="/images/work2.jpg" width="600" height="400"/>
-              <div className="desc">Jira 2017</div>
-            </div>
-            <div className="imgCont">
-              <img src="/images/work3.jpg" width="600" height="400"/>
-              <div className="desc">Slack Pro</div>
-            </div>
-            <div className="imgCont">
-              <img src="/images/work4.jpg" width="600" height="400"/>
-              <div className="desc">TraveChat</div>
-            </div>
-            <div className="imgCont">
-              <img src="/images/work5.jpg" width="600" height="400"/>
-              <div className="desc">Network</div>
-            </div>
-            <div className="imgCont">
-              <img src="/images/work6.jpg" width="600" height="400"/>
-              <div className="desc">Time Camp</div>
-            </div>
-            <div className="clear">
-            <div className="allProdLink">
-            <a className="allProd" href="#All Products">All Products</a>
-            </div>
-            </div>
-        </div>
+        <TopNavBar />
+        <TopNav />
+        <MainContainer />
 
         <div className="main2">
           <p className="bigText2" id="2">Testimonials</p>
@@ -198,16 +133,7 @@ class App extends Component {
         </div>
         </div>
 
-        <div className="footerMenu">
-          <img src="/images/find-parrot-footer.png" />
-          <div className="footerHrefs">
-          <a href="#AboutUs">About us</a>
-          <a href="#termsOfService">Terms of service</a>
-          <a href="#PrivacyPolicy">Privacy policy</a>
-          <a href="#ContactUs">Contact us</a>
-          </div>
-          <p className="FinalText">© 2018 Find Parrot</p>
-        </div>
+        <Footer />
       </div>
     );
   }
