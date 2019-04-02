@@ -4,8 +4,8 @@ html{
 }
 
 body{
-  background-color: white !important;
-  color: black !important;
+  background-color: white !important;   /* prevent slider from changing styles */
+  color: black !important; /* prevent slider from changing styles */
 }
 
 .App {
@@ -340,7 +340,7 @@ div.desc {
   text-decoration: none;
 }
 
-.FinalText {
+.finalText {
   color: white;
   font-size: 9pt;
   margin: 0;
@@ -353,6 +353,7 @@ div.desc {
   display: flex;
   justify-content: center;
 }
+/* correcting 3rd party slider styling to match project */
 
 .gradientDiv {
   height: 4px;

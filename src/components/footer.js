@@ -11,7 +11,7 @@ export class Footer extends Component {
         <a href="#PrivacyPolicy">Privacy policy</a>
         <a href="#ContactUs">Contact us</a>
         </div>
-        <p className="FinalText">© 2018 Find Parrot</p>
+        <p className="finalText">© 2018 Find Parrot</p>
       </div>
     )
   }

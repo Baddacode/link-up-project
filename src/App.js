@@ -55,23 +55,6 @@ class App extends Component {
     </div>
     </div>
   ];
-  {/*  let slides = [
-        <div className="review">
-        <div className="anotherDiv">
-          <img src="/images/dude1.jpg" />
-          <p className="reviewText">I have been incredibly impressed with LinkUp team of developers. They worked hard to deliver the highest-quality product possible and exceeded my expectations at every step of the way. I initially found Andriy in search of a better price than what I could find locally with other development firms. But what I found - in addition to a better price - was a much higher-quality product as well, in every way: service, design, development, communications...etc. 5+++ Stars work. Great job.</p>
-        </div>,
-        <div className="review">
-          <img src="/images/dude2.jpg" />
-          <p className="reviewText">Loved working with LinkUp. Great guys, developers, and management. They knew how to do the job, in the most professional way.</p>
-        </div>
-        <div className="review">
-          <img src="/images/dude3.jpg" />
-          <p className="reviewText">Nice company willing to work and get educated at he same time. Ready to face any challenges and very friendly with customers. They quote very humbly and every invoice can be discussed well in advance. We made a custom design web shop with them and keep on cooperating on development and maintenance. Highly recommended.</p>
-        </div>
-        </div>
-    ];*/}
-
 
     return (
       <div className="App">
@@ -85,16 +68,9 @@ class App extends Component {
         </div>
 
         <div className="reviewSlider">
-
-
             <Carousel slides={slides}/>
-
-
         </div>
 
-        {/*
-          additional task: feedback form with submit
-        */}
 
         <div className="gradientDiv">
         </div>
